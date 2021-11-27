@@ -1,3 +1,5 @@
 # Elcoma-Dashboard
 
-Descrição do MVP
+ Passo a passo para execução do MVP 
+ 
+
