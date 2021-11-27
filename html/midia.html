@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elcoma</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="/logo1.png" type ="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Midias
+          <small class="text-muted">Shooping Guararapes</small>
+        </h2>
+      </div>
+    </div>
+    <div class="row" style="margin-left:80%;">
+      <div class="col-md-12">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalRegistro" style="background-color: green;">
+          Adicionar + 
+        </button>
+    </div>
+  </div>
+    <div class="row" style="margin-top: 20px">
+      <div class="col-md-12">
+        <table  id ="tblDados" class="table table-striped table-hover" style="text-align: center;">
+          <thead>
+            <tr>
+              <th scope="col" style="background-color: rgb(183, 183, 183);">#</th>
+              <th scope="col" style="background-color: rgb(183, 183, 183); width: 100px;">Titulo</th>
+              <th scope="col" style="background-color: rgb(183, 183, 183);">Data</th>
+              <th scope="col" style="background-color: rgb(183, 183, 183);">Período Exibição Inicial</th>
+              <th scope="col" style="background-color: rgb(183, 183, 183);">Período Exibição Final</th>
+              <th scope="col" style="background-color: rgb(183, 183, 183);">Ativa</th>
+              <th scope="col" style="background-color: rgb(183, 183, 183);">Dashboard</th>
+              <th scope="col" style="background-color: rgb(183, 183, 183); width: 50px;"></th>
+              <th scope="col" style="background-color: rgb(183, 183, 183); width: 50px;"></th>
+              <th scope="col" style="background-color: rgb(183, 183, 183); width: 50px;"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>1</th>
+              <th>Gênero</th>
+              <td>17/11/2021</td>
+              <td><mark style="background-color:rgb(9, 181, 9); border-radius: 6px; color: white;">18/11/2021 </mark></td>
+              <td><mark style="background-color:rgb(220, 90, 90); border-radius:6px; color:white;">01/01/2022</mark></td>
+              <td>Sim</td>
+              <td>Sim</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="modal fade" id="modalRegistro" role="dialog" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalRegistroLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalRegistroLabel">Registros</h5>
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                  <label for="">Titulo</label>
+                  <input id="txtTitulo" type="text" class="form-control" placeholder="digite um título...">
+              </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+                <label for="">Data</label>
+                <input id="txtData" type="date" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+              <label for="">Período Exibição Inicial</label>
+              <input id="txtPeriodo" type="month" class="form-control">
+          </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+            <label for="">Período Exibição Final</label>
+            <input id="txtPeriodoF" type="month" class="form-control">
+        </div>
+    </div>
+      <div class="col-md-6">
+        <div class="form-group" style="margin-top:20px;margin-bottom:10px;">
+            <label for="">Ativa</label>
+            <select name="Ativa" id="txtAtiva">
+              <option value="Sim">Sim</option>
+              <option value="Não">Não</option>
+            </select>
+        </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group" style="margin-top:20px; margin-bottom:10px;">
+          <label for="">Dashboard</label>
+          <select name="Dashboard" id="txtDashboard">
+            <option value="Sim">Sim</option>
+            <option value="Não">Não</option>
+          </select>
+      </div>
+  </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button id="btnSalvar"type="button" class="btn btn-primary">Salvar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+      
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script src="/js/script.js"></script>
+</body>
+</html>

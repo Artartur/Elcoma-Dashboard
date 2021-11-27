@@ -1,0 +1,36 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+body{
+  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+  font-size:32px;
+  text-decoration: none;
+}
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+.logo{
+  height:45px;
+  margin-top:10px;
+}
+.header{
+  position:relative;
+  top:-150px;
+  left:20px;
+  color:orange;
+}
+.right a{
+  font-size:18px;
+}
+.right a:hover{
+  background-color: orange;
+  font-weight:bold;
+}
+
