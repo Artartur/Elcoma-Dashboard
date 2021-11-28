@@ -7,6 +7,7 @@ O projeto teve como foco explorar o seguinte problema: O wi-fi fornecido pelo El
 O MVP da solução foi construído utilizando as seguintes ferramentas:
 
 FRONT-END
+
 Ferramentas de construção de prototipação e desenvolvimento
 FIGMA 
 VISUAL STUDIO CODE
