@@ -22,13 +22,14 @@ BACK-END
 
 Ferramentas de construção do back-end
 API construída no PYTHONANYWHERE
-Linguagem de programação Python
-HTML como linguagem de marcação
-CSS como linguagem de estilo 
-Ferramentas de framework
+Linguagens
+Python
+JavaScript
+Ferramentas 
 Postman (Validação serviços e métodos GET e POST)
 Jmeter (Testes de serviços)
 Django (framework web Python)
+
 
 ----------------------------------------------------------------------------------------------------------------
 
