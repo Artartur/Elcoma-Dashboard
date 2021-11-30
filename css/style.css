@@ -9,6 +9,7 @@ body{
   font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
   font-size:32px;
   text-decoration: none;
+  background-color: #b8b8b8;
 }
 .icon-block {
   padding: 0 15px;
@@ -20,6 +21,13 @@ body{
   height:45px;
   margin-top:10px;
 }
+.black{
+  height:80px;
+}
+#logo-container img{
+  margin-top: 10%;
+}
+
 .header{
   position:relative;
   top:-150px;
@@ -27,26 +35,21 @@ body{
   color:orange;
 }
 .right a{
-  font-size:18px;
+  font-size:25px;
+  margin-top: 10%;
 }
 .right a:hover{
   background-color: orange;
   font-weight:bold;
 }
 .grafico{
-  display:flex;
-  margin-left: -10%;
+  display: flex;
+  justify-content: space-between;
+  margin-left:  -10%;
+  background-color: grey;
 }
 .grafico1{
-  display:flex;
-  margin-left: -15%;
-  margin-bottom: 5%;
-}
-.grafico2{
-  margin-left: -25%;
-  margin-bottom: 5%;
-}
-
-.aniversariante{
-  margin-left: 35%;
+  display: flex;
+  margin-left: -10%;
+  background-color: grey;
 }

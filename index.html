@@ -13,220 +13,17 @@
   <link rel="shortcut icon" href="logo1.png" type ="image/x-icon">
 
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load("current", {packages:["corechart"]});
-      google.charts.setOnLoadCallback(drawChart);
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Task', 'Hours per Day'],
-          ['Masculino',     17],
-          ['Feminino',      25],
-          ['Outros',  10],
-          ['Não informado', 5],
-        
-
-        ]);
-
-        var options = {
-          title: 'Gênero',
-          is3D: true,
-          colors: ['#f26f42','purple','#d33952','#ED8975']
-         
-        };
-
-        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
-        chart.draw(data, options);
-      }
-      </script>
-      
-      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-      <script type="text/javascript">
-        google.charts.load("current", {packages:["corechart"]});
-        google.charts.setOnLoadCallback(drawChart);
-        function drawChart() {
-          var data = google.visualization.arrayToDataTable([
-            ['DDD', 'Speakers (in millions)'],
-            ['PE (81)', 20],
-            ['CE (87)',  5],
-            ['PB (83)', 10],
-            ['RN (84)', 5]
-          ]);
-  
-        var options = {
-          legend: 'none',
-          pieSliceText: 'label',
-          title: 'DDD por localização',
-          pieStartAngle: 100,
-          colors: ['#f26f42','purple','#d33952','#ED8975']
-        };
-       
-          var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-          chart.draw(data, options);
-        }
-      </script>
-
-      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
-
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Dias', 'Visualizações'],
-          ['01/12',  400  ],
-          ['02/12',  650  ],
-          ['03/12',  1300 ],
-          ['04/12',  2300 ], 
-          ['05/12',  2000 ], 
-          ['06/12',  600],
-          ['07/12',  700 ],
-          ['08/12',  650 ],
-          ['09/12',  800 ],
-          ['10/12',  1500 ],
-        ]);
-
-        var options = {
-          title: 'Visualizações',
-          curveType: 'function',
-          legend: { position: 'bottom' },
-          colors: ['#f26f42']
-          
-        };
-
-        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
-
-        chart.draw(data, options);
-      }
-    </script>
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-<script type="text/javascript">
-  google.charts.load('current', {'packages':['bar']});
-  google.charts.setOnLoadCallback(drawStuff);
-
-  function drawStuff() {
-    var data = new google.visualization.arrayToDataTable([
-      [' ', ' '],
-      ['Janeiro', 10],
-      ['Fevereiro', 15],
-      ['Março', 12],
-      ['Abril', 16],
-      ['Maio', 25],
-      ['Junho', 12],
-      ['Julho', 18],
-      ['Agosto', 20],
-      ['Setembro', 15],
-      ['Outubro', 25],
-      ['Novembro', 30],
-      ['Dezembro', 23],
-    ]);
-
-    var options = {
-      colors: ['#f26f42'],
-      title: 'Aniversariante por mês',
-      width: 500,
-      height: 800,
-      legend: { position: 'none' },
-      chart: { title: 'Aniversariante por mês'},
-      bars: 'horizontal', // Required for Material Bar Charts.
-      axes: {
-        x: {
-          0: { side: 'bottom', label: ' '} // Top x-axis.
-        }
-      },
-      bar: { groupWidth: "90%" },
-      
-    };
-
-    var chart = new google.charts.Bar(document.getElementById('top_x_div'));
-    chart.draw(data, options);
-  };
-</script>
-
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['corechart', 'bar']});
-      google.charts.setOnLoadCallback(drawStuff);
-
-      function drawStuff() {
-
-        var button = document.getElementById('change-chart');
-        var chartDiv = document.getElementById('chart_div');
-
-        var data = google.visualization.arrayToDataTable([
-          ['Faixa etária por idade', ' ',' '],
-          ['0 a 14', 6,14],
-          ['15 a 31', 20, 31],
-          ['40 a 60', 50,60],
-          ['61+', 61,75],
-        ]);
-
-        var materialOptions = {
-          width: 950,
-          chart: {
-            title: 'Faixa etária por idade',
-          },
-          colors: ['#f26f42', '#919597']
-        };
-
-      
-
-        function drawMaterialChart() {
-          var materialChart = new google.charts.Bar(chartDiv);
-          materialChart.draw(data, google.charts.Bar.convertOptions(materialOptions));
-          button.innerText = 'Change to Classic';
-          button.onclick = drawClassicChart;
-        }
-
-        function drawClassicChart() {
-          var classicChart = new google.visualization.ColumnChart(chartDiv);
-          classicChart.draw(data, classicOptions);
-          button.innerText = 'Change to Material';
-          button.onclick = drawMaterialChart;
-        }
-
-        drawMaterialChart();
-    };
-    </script>
-   
-   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['bar']});
-      google.charts.setOnLoadCallback(drawChart);
-
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          [' ', 'Android','Mac','Windows','Linux','Outros'],
-          ['Janeiro', 20,10,6,2,10],
-          ['Fevereiro', 18,6,8,1,5],
-          ['Março', 6,15,5,2,3],
-          ['Abril', 10,12,4,3,2],
-          ['Maio', 10,14,6,4,1],
-          ['Junho', 11,16,7,2,2],
-          ['Julho', 6,8,8,5,4],
-          ['Agosto', 10,20,9,6,5],
-          ['Setembro', 10,14,5,2,6],
-          ['Outubro', 11,15,6,3,3],
-          ['Novembro', 6,12,8,4,2],
-          ['Dezembro', 10,20,9,5,3],
-        ]);
-
-        var options = {
-          chart: {
-            title: 'Sistema Operacional',
-          },
-          colors: ['#f26f42','purple','#d33952','#ED8975'],
-        };
-
-        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
-
-        chart.draw(data, google.charts.Bar.convertOptions(options));
-      }
-    </script>
+  <script type="text/javascript" src="/js/pizza.js"></script>
+  <script type="text/javascript" src="/js/pizza1.js"></script>
+  <script type="text/javascript" src="/js/pizza2.js"></script>
+  <script type="text/javascript" src="js/escala.js"></script>
+  <script type="text/javascript" src="js/coluna.js"></script>
+  <script type="text/javascript" src="js/barra.js"></script>
 
 </head>
 <body>
   <nav class="black" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img src="logo.png" class="logo"> Vagalume</a>
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img src="logo.png" class="logo"> <b>Vagalume</b></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#">Dashboard</a></li>
         <li><a href="/html/midia.html">Midias</a></li>
@@ -244,23 +41,20 @@
       <br><br>
       <div class = "grafico">
         <!--Gráfico de pizza-->
-        <div id="piechart_3d" style="width: 900px; height: 500px;"></div>
-        <!--Gráfico de pizza-->
-        <div id="piechart" style="width: 800px; height: 500px;"></div>
-
+        <div id="piechart" style="width: 900px; height: 500px;"></div>
+        <div id="piechart1" style="width: 900px; height: 500px;"></div>
+        <div id="piechart2" style="width: 900px; height: 500px;"></div>
       </div>
 
       <div class="grafico1">
-      <div id="curve_chart" style="width: 800px; height: 300px"></div>
-      <div id="chart_div" style="width: 100px; height: 300px;"></div>
+      <div id="curve_chart" style="width: 1000px; height: 400px"></div>
+      <div id="columnchart_material" style="width: 1000px; height: 400px;"></div>
+      <div id="barchart_material" style="width: 1000px; height: 400px;"></div>
       </div>
 
       <div class="grafico2">
-  
-      
-      <div id="columnchart_material" class= "so" style="width: 2000px; height: 400px;"></div>
+       
       </div>
-      <div id="top_x_div" class = "aniversariante"></div>
       <br><br>
 
     </div>
