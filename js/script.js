@@ -44,7 +44,6 @@ function PopulaTabela(){
                 <td>${item.Ativa}</td>
                 <td>${item.Dashboard}</td>
                 <td><button type="button" class="btn btn-primary" onclick="javascript:EditaRegistro(${item.ID});"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button></td>
-                <td><button type="button" class="btn btn-light btn-outline-secondary"><i class="fa fa-list" aria-hidden="true"></i></button></td>
                 <td><button type="button" class="btn btn-danger" onclick="javascript:ApagaRegistro(${item.ID});"><i class="fa fa-times" aria-hidden="true"></i></button></td>
                 </tr>`)
         

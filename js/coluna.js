@@ -3,7 +3,7 @@ google.charts.load('current', {'packages':['bar']});
 
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
-          ['Idade', '', ''],
+          ['Idade', 'M', 'F'],
           ['0 a 14', 10, 14],
           ['15 a 31', 17, 25],
           ['40 a 60', 40, 25],
@@ -14,7 +14,7 @@ google.charts.load('current', {'packages':['bar']});
           chart: {
             title: 'Faixa etária',
           },
-          colors:['#f26f42','#b8b8b8']
+          colors:['#f26f42','#ED8975']
         };
 
         var chart = new google.charts.Bar(document.getElementById('columnchart_material'));

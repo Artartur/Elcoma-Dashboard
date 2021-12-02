@@ -13,7 +13,7 @@ function drawChart() {
 
   var options = {
     title: 'Gênero',
-    colors:['#f26f42','purple','#d33952','#ED8975']
+    colors:['#f26f42','#ED8975','purple','#d33952']
   };
 
   var chart = new google.visualization.PieChart(document.getElementById('piechart'));

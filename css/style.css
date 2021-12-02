@@ -9,7 +9,7 @@ body{
   font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
   font-size:32px;
   text-decoration: none;
-  background-color: #b8b8b8;
+  background-color: #dfdfdf;
 }
 .icon-block {
   padding: 0 15px;
@@ -43,13 +43,19 @@ body{
   font-weight:bold;
 }
 .grafico{
-  display: flex;
-  justify-content: space-between;
-  margin-left:  -10%;
-  background-color: grey;
+  background-color:white;
+  display:flex;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  margin:0 auto;
+
 }
-.grafico1{
-  display: flex;
-  margin-left: -10%;
-  background-color: grey;
+
+.grafico > div {
+  flex: 1 1 200px;
+  margin:5px;
+}
+
+#columnchart_material{
+  font-size: 20px;
 }

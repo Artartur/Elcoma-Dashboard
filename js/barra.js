@@ -11,7 +11,12 @@ function drawChart() {
     ['Maio', 20],
     ['Junho', 23],
     ['Julho', 28],
-    
+    ['Agosto', 18],
+    ['Setembro', 23],
+    ['Outubro', 30],
+    ['Novembro', 35],
+    ['Dezembro', 21],
+
   ]);
 
   var options = {
