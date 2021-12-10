@@ -73,7 +73,11 @@ necessário executar uma regressão dos serviços pelo Jmeter.
 
 8- Por fim, utilizamos um return render_template, para chamar o arquivo html e renderiza-lo na API.
 
+![login](https://user-images.githubusercontent.com/86370873/145582759-b7e0b9d1-91ae-4c01-bc0e-666e0e79a892.png)
 
+![Dashboard](https://user-images.githubusercontent.com/86370873/145582769-6f0a0aca-af41-46ee-a6bb-ece131ea8456.png)
+
+![midias](https://user-images.githubusercontent.com/86370873/145582792-6e41dc97-4969-4e77-a658-79bdb4395ef1.png)
 
 
 
