@@ -1,13 +1,12 @@
 # Elcoma-Dashboard
 
- Passo a passo para execução do MVP 
- 
+ Passo a passo da execução do MVP
+
 O projeto teve como foco explorar o seguinte problema: O wi-fi fornecido pelo Elcoma apresenta ao público publicidades que geram relatórios de entregas do conteúdo ao anunciante. No entanto, o relatório está com poucas informações expressivas e  significativas, além de não ser esteticamente interessante. A partir disso desenvolvemos uma solução com foco no problema identificado que consiste na criação de um dashboard com maior detalhamento das informações sobre os dados coletados a partir do acesso do público a plataforma, bem como a otimização e segmentação desses anúncios de acordo com o perfil de usuários e geração de insights de dados.
 
 O MVP da solução foi construído utilizando as seguintes ferramentas:
 
 FRONT-END
-
 Ferramentas de construção de prototipação e desenvolvimento
 FIGMA 
 VISUAL STUDIO CODE
@@ -30,8 +29,7 @@ Ferramentas
 Postman (Validação serviços e métodos GET e POST)
 Jmeter (Testes de serviços)
 Django (framework web Python)
-
-
+	
 ----------------------------------------------------------------------------------------------------------------
 
 Descrição da construção do front-end:
@@ -78,6 +76,21 @@ necessário executar uma regressão dos serviços pelo Jmeter.
 ![Dashboard](https://user-images.githubusercontent.com/86370873/145582769-6f0a0aca-af41-46ee-a6bb-ece131ea8456.png)
 
 ![midias](https://user-images.githubusercontent.com/86370873/145582792-6e41dc97-4969-4e77-a658-79bdb4395ef1.png)
+
+
+O MVP apresenta o desenvolvimento do front-end com o design responsivo e multiplataforma para suprir a demanda da Elcoma/Vagalume:
+
+1. Ao acessar o link do mvp haverá um direcionamento para a página de dashboard 
+      	1.1 O dashboard com dados estáticos será apresentado
+2. Na mesma tela será possível acessar a página de mídias 
+       2.2 A página de mídias aparecerá uma opção de controle dos dados a respeito das mídias
+       2.3 Essa aba terá as opções de controle através de Título, Data, Período Exibição Inicial, Período Exibição Final.
+3. A aba de mídias foi construída através de um CRUD 
+
+
+
+
+
 
 
 
