@@ -1,0 +1,174 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+@media only screen and (max-width: 600px){
+
+div {
+    width: 100%;
+    max-height: 100%;
+    background-color: white;
+}
+
+}
+
+body {
+    background-size:cover;
+    background-color:#f3eded;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.logo {
+    border-radius: 10px;
+    width: 130px;
+
+}
+
+
+form .card-group {
+    position: relative;
+    border-bottom: 2px solid #9d9d9d; 
+    margin: 25px 0;
+
+}
+
+.title {
+    color: #f2651c;
+    margin: auto;
+    margin-top: px;
+}
+
+.card {
+    box-shadow: 1px 1px 3px #ccc;
+    background-color: white;
+    margin:auto;
+    width: 350px;
+    height: 530px;
+    padding: 25px;
+    border-radius: 8px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+ }
+
+
+
+.card-top {
+    text-align: center;
+}
+
+.card-top p{
+    margin-top: 5px;
+}
+.card-group{
+    margin:auto;
+}
+
+.card-group  label {
+    position:absolute;
+    top:50%;
+    left:5px;
+    color:#adadad;
+    transform: translateY(-50%);
+    font-size:16;
+    pointer-events: none;
+    transition: .5s;
+    
+}
+
+.card-group  input {
+    width:100%;
+    padding: 0 5px;
+    height:40px;
+    font-size:16px;
+    border:none;
+    background: none;
+    outline:none;
+  
+}
+
+
+.card-group span::before {
+        content:'';
+        position: relative;
+        top: 40px;
+        left:0;
+        width:0%;
+        height:2px;
+        background: #adadad;
+        transition: .5s;
+}
+
+.card-group input:focus ~ label, .card-group input:valid ~ label {
+        top: -5px;
+        color:#000000;
+}
+
+.card-group input:focus ~ span::before, .card-group input:invalid ~ span::before {
+    width: 100%;
+    
+}
+
+.butt > button {
+    background-position: right bottom;
+    background-color:#f2651c;
+    color: white;
+    width: 100%;
+    border-radius: 30px;
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    transition: all 300ms ease-out;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.butt > button:hover {
+    background-position: left bottom;
+    background-color:#6d6e72;
+
+}
+
+
+
+.hr {
+    border: 0;
+    border-top: 1px dashed #CCC;
+    border-bottom: 2px solid #CCC;
+    height: 3px;
+
+  }
+
+.card-groupe a {
+    margin:auto;
+    text-decoration: none;
+    font-size: 15px;
+    color:black;
+    background-position: right bottom;
+    transition: all 300ms ease-out;
+}
+
+.card-groupe a:hover {
+    background-position: left bottom;
+    color:#adadad;
+}
+
+
+.link {
+    text-decoration: none;
+    color: white;
+}
+

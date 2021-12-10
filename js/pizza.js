@@ -5,10 +5,10 @@ function drawChart() {
 
   var data = google.visualization.arrayToDataTable([
     ['Gênero', 'Hours per Day'],
-    ['Masculino',     11],
-    ['Feminino',      2],
-    ['Não informado',  2],
-    ['Outros', 2],
+    ['Ma',     11],
+    ['Fe',      2],
+    ['N.I',  2],
+    ['Out', 2],
   ]);
 
   var options = {

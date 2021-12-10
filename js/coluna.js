@@ -5,9 +5,9 @@ google.charts.load('current', {'packages':['bar']});
         var data = google.visualization.arrayToDataTable([
           ['Idade', 'M', 'F'],
           ['0 a 14', 10, 14],
-          ['15 a 31', 17, 25],
-          ['40 a 60', 40, 25],
-          ['61 +', 30, 20]
+          ['15 a 29', 17, 25],
+          ['30 a 49', 40, 25],
+          ['50 a 60+', 30, 20]
         ]);
 
         var options = {

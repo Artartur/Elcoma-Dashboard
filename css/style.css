@@ -5,7 +5,7 @@
  *
  * Made By MaterializeCSS.com
  */
-body{
+ body{
   font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
   font-size:32px;
   text-decoration: none;
@@ -46,9 +46,9 @@ body{
   background-color:white;
   display:flex;
   flex-wrap: wrap;
-  max-width: 1400px;
+  max-width: 1000px;
   margin:0 auto;
-
+  width:1200px;
 }
 
 .grafico > div {
@@ -58,4 +58,113 @@ body{
 
 #columnchart_material{
   font-size: 20px;
+}
+
+.navbar{
+  height:80px;
+}
+.navbar-brand{
+  justify-content: space-between;
+  margin:250px;
+}
+.navbar-brand img{
+  margin:30px;
+}
+
+@media (max-width: 999px){
+  .navbar-brand{
+    margin-top:-3%;
+    margin-left:-25%;
+  }
+  .grafico{
+    margin-left:-2%;
+    width:700px;
+  }
+  .grafico #curve_chart{
+    margin-left:10%;
+  }
+  .grafico #columnchart_material{
+    margin-left:12%;
+  }
+}
+
+@media (max-width: 540px){
+  .navbar-brand{
+    margin-top:-4%;
+    margin-left:15%;
+  }
+
+
+}
+@media (max-width: 480px){
+  .navbar-brand{
+    margin-top:-4%;
+    margin-left:-25%;
+  }
+
+  .grafico{
+    background-color:white;
+    display:flex;
+    flex-wrap: wrap;
+    max-width: 200px;
+    margin-left:auto;
+    
+  }
+  
+  .grafico > div {
+    flex: 1 1 200px;
+    margin:2px;
+  }
+  .grafico #curve_chart{
+    margin-left:-10%;
+    
+  }
+  .grafico #columnchart_material{
+    margin-left:-5%;
+  }
+}
+@media (max-width: 360px){
+  .navbar-brand{
+    margin-top:-5%;
+    margin-left:18%;
+  }
+ 
+}
+
+@media (max-width: 768px){
+  .navbar-brand{
+    margin-top:-3%;
+    margin-left:35%;
+  }
+}
+@media (max-width: 411px){
+  .navbar-brand{
+    margin-top:-5%;
+    margin-left:18%;
+  }
+}
+@media (max-width: 414px){
+  .navbar-brand{
+    margin-top:-5%;
+    margin-left:20%;
+  }
+}
+@media (max-width: 320px){
+  .navbar-brand{
+    margin-top:-5%;
+    margin-left:14%;
+  }
+
+}
+@media (max-width: 375px){
+  .navbar-brand{
+    margin-top:-5%;
+    margin-left:17%;
+  }
+}
+@media (max-width: 280px){
+  .navbar-brand{
+    margin-top:-7%;
+    margin-left:8%;
+  }
 }
